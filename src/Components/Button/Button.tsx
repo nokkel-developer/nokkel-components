@@ -30,7 +30,7 @@ const Button = ({
             onClick={onClick}
             disabled={disabled}
         >
-            {text}
+            <span className="p-40">{text}</span>
         </button>
     );
 };
