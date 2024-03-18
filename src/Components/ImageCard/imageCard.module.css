@@ -1,0 +1,31 @@
+.imageCardWrapper {
+  @apply min-w-56 overflow-hidden rounded-custom border;
+}
+
+[data-theme="quilter"] .imageCardWrapper {
+  @apply min-w-56 overflow-hidden rounded-custom border;
+}
+
+[data-theme="aviva"] .imageCardWrapper {
+  @apply min-w-56 overflow-hidden rounded-custom border;
+}
+
+.imageCardImage {
+  @apply mb-4 h-36 bg-gray-20 p-4;
+}
+
+.imageCardTextWrapper {
+  @apply pl-3;
+}
+
+.imageCardTitle {
+  @apply font-sans text-xl font-medium;
+}
+
+[data-theme="quilter"] .imageCardTitle {
+  @apply font-serif text-xl font-medium text-primary-100;
+}
+
+.imageCardSubtitle {
+  @apply pb-4 font-sans font-light text-gray-100;
+}

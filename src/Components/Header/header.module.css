@@ -1,0 +1,35 @@
+.header {
+  @apply w-full;
+}
+
+.headerBackButton {
+  @apply link-underline link-underline-black pb-1 font-sans text-xl text-black;
+}
+
+.headerTitle {
+  @apply pb-10 pt-2 text-center font-sans;
+}
+
+.headerTitle [data-theme="aviva"] {
+  @apply pb-10 pt-2 text-center font-sans text-gray-80;
+}
+
+[data-theme="quilter"] .headerTitle {
+  @apply pb-10 pt-2 text-center font-serif text-primary-100;
+}
+
+.headerSearchWrapper {
+  @apply mb-10;
+}
+
+.headerSearchInput {
+  @apply mb-4 w-full border border-gray-20 bg-white p-3 focus:border-primary-100 rounded-custom;
+}
+
+[data-theme="quilter"] .headerSearchInput {
+  @apply mb-4 w-full border border-gray-20 bg-white p-3 focus:border-primary-20;
+}
+
+[data-theme="aviva"] .headerSearchInput {
+  @apply mb-4 w-full rounded border border-gray-20 bg-gray-0 p-3 focus:border-secondary-100;
+}

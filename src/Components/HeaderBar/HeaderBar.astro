@@ -1,0 +1,19 @@
+---
+import AvivaLogo from "./AvivaLogo";
+import FNZIcon from "./FNZIcon";
+import PoweredByNokkel from "./PoweredByNokkel";
+
+import HeaderStyles from "./headerBar.module.css";
+
+// TODO: this is static on build - make dynamic
+import { $theme } from "../../themeStore";
+---
+
+<div data-testid="header-bar-wrapper" class={HeaderStyles.header}>
+  <div class={HeaderStyles.headerLogo}>
+    <a href="/">
+      {$theme.get() === "aviva" ? <AvivaLogo /> : <FNZIcon />}
+    </a>
+  </div>
+  <PoweredByNokkel />
+</div>

@@ -1,0 +1,62 @@
+---
+import { SITE_TITLE } from "../../config";
+import HeaderStyles from "./header.module.css";
+---
+
+<header class={HeaderStyles.header}>
+  <button onclick="history.back()">
+    <span class={HeaderStyles.headerBackButton}> Go back</span>
+  </button>
+  <h1 class={HeaderStyles.headerTitle}>
+    {SITE_TITLE}
+  </h1>
+  <div class={HeaderStyles.headerSearchWrapper}>
+    <input
+      class={HeaderStyles.headerSearchInput}
+      id="search"
+      type="text"
+      placeholder="Search..."
+      autocomplete="off"
+    />
+  </div>
+</header>
+
+<div id="results"></div>
+
+<script is:inline>
+  const searchIndexing = () => {
+    document.querySelector("#search")?.addEventListener("input", async (e) => {
+      // only load the pagefind script once
+      if (e.target.dataset.loaded !== "true") {
+        e.target.dataset.loaded = "true";
+        // load the pagefind script
+        window.pagefind = await import("/support/pagefind/pagefind.js");
+      }
+
+      // search the index using the input value
+      const search = await window.pagefind.search(e.target.value);
+
+      // clear the old results
+      document.querySelector("#results").innerHTML = "";
+
+      // add the new results
+      for (const result of search.results) {
+        const data = await result.data();
+        const title = data.url.replace("-", " ").replace(/\b\S/g, (t) => t.toUpperCase());
+        document.querySelector("#results").innerHTML += `
+      <div class="border my-4 p-4 [border-radius:var(--border-radius)]" id="search-results">
+        <a href="/support${data.url}index.html">
+          <h4 class="py-2">${title}</h4>
+          <p>${data.excerpt}</p>
+        </a>
+        </div>`;
+      }
+    });
+  };
+
+  searchIndexing();
+
+  document.addEventListener("astro:after-swap", () => {
+    searchIndexing();
+  });
+</script>
