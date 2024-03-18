@@ -1,4 +1,4 @@
-// export * from "./Button";
-// export * from "./Footer";
-// export * from "./Header";
-// export * from "./HeaderBar";
+export * from "./Button";
+export * from "./Footer";
+export * from "./ImageCard";
+export * from "./IndexCard";
