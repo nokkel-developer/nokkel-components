@@ -1,0 +1,31 @@
+.videoCardWrapper {
+  @apply min-w-56 overflow-hidden rounded-custom border;
+}
+
+[data-theme="quilter"] .videoCardWrapper {
+  @apply min-w-56 overflow-hidden rounded-custom border;
+}
+
+[data-theme="aviva"] .videoCardWrapper {
+  @apply min-w-56 overflow-hidden rounded-custom border;
+}
+
+.videoCardvideo {
+  @apply mb-4 h-[600px] bg-gray-20;
+}
+
+.videoCardTextWrapper {
+  @apply pl-3;
+}
+
+.videoCardTitle {
+  @apply font-sans text-xl font-medium;
+}
+
+[data-theme="quilter"] .videoCardTitle {
+  @apply font-serif text-xl font-medium text-primary-100;
+}
+
+.videoCardSubtitle {
+  @apply pb-4 font-sans font-light text-gray-100;
+}
