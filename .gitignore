@@ -1,5 +1,4 @@
-node_modules
-dist
-
-# storybook build
-storybook-static
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
