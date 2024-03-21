@@ -1,0 +1,26 @@
+.indexCardWrapper {
+  @apply flex flex-row rounded-custom border p-2;
+}
+.indexCardContainer {
+  @apply flex flex-row;
+}
+
+.indexCardImage {
+  @apply flex h-[70px] w-14 items-center justify-center rounded-sm bg-primary-100 font-sans text-5xl text-white;
+}
+
+.indexCardTextWrapper {
+  @apply pl-3;
+}
+
+.indexCardTitle {
+  @apply font-sans text-xl font-medium;
+}
+
+[data-theme="quilter"] .indexCardTitle {
+  @apply font-serif text-xl font-medium text-primary-100;
+}
+
+.indexCardSubTitle {
+  @apply font-sans font-light text-gray-100;
+}
