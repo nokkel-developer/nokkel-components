@@ -10,13 +10,6 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  decorators: [
-    (Story) => (
-      <div id="theme-provider">
-        <Story />
-      </div>
-    ),
-  ],
 } satisfies Meta<typeof ImageCard>;
 
 export default meta;

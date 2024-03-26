@@ -1,3 +1,4 @@
+import React from "react";
 import type { Preview } from "@storybook/react";
 import "../src/styles/global.css";
 import type { ThemeConfig } from "storybook-addon-data-theme-switcher";
@@ -11,6 +12,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <div id="theme-provider">
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export const globalTypes = {
