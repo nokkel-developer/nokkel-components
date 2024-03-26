@@ -1,6 +1,6 @@
 import React from "react";
 
-import ImageCardStyles from "./imageCard.module.css";
+import "./imageCard.css";
 
 const ImageCard = ({
   title,
@@ -11,14 +11,11 @@ const ImageCard = ({
   imageSrc?: string;
 }) => {
   return (
-    <div
-      data-testid="image-card-wrapper"
-      className={ImageCardStyles.imageCardWrapper}
-    >
-      <div className={ImageCardStyles.imageCardImage}></div>
-      <div className={ImageCardStyles.imageCardTextWrapper}>
-        <h5 className={ImageCardStyles.imageCardTitle}>{title}</h5>
-        <p className={ImageCardStyles.imageCardSubtitle}>{subtitle}</p>
+    <div data-testid="image-card-wrapper" className={"imageCardWrapper"}>
+      <div className="imageCardImage"></div>
+      <div className="imageCardTextWrapper">
+        <h5 className="imageCardTitle">{title}</h5>
+        <p className="imageCardSubtitle">{subtitle}</p>
       </div>
     </div>
   );

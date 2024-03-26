@@ -1,6 +1,6 @@
 import React from "react";
 
-import videoCardStyles from "./videoCard.module.css";
+import "./videoCard.css";
 
 const videoCard = ({
   title,
@@ -13,11 +13,8 @@ const videoCard = ({
   videoSrc?: string;
 }) => {
   return (
-    <div
-      data-testid="video-card-wrapper"
-      className={videoCardStyles.videoCardWrapper}
-    >
-      <div className={videoCardStyles.videoCardvideo}>
+    <div data-testid="video-card-wrapper" className="videoCardWrapper">
+      <div className="videoCardvideo">
         {videoSrc && (
           <iframe
             width="100%"
@@ -30,9 +27,9 @@ const videoCard = ({
           ></iframe>
         )}
       </div>
-      <div className={videoCardStyles.videoCardTextWrapper}>
-        <h5 className={videoCardStyles.videoCardTitle}>{title}</h5>
-        <p className={videoCardStyles.videoCardSubtitle}>{subtitle}</p>
+      <div className="videoCardTextWrapper">
+        <h5 className="videoCardTitle">{title}</h5>
+        <p className="videoCardSubtitle">{subtitle}</p>
       </div>
     </div>
   );

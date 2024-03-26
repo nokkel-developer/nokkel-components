@@ -9,9 +9,44 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    "@storybook/addon-styling-webpack",
+    {
+      name: "@storybook/addon-styling-webpack",
+      options: {
+        rules: [
+          {
+            test: /\.css$/,
+            sideEffects: true,
+            use: [
+              require.resolve("style-loader"),
+              {
+                loader: require.resolve("css-loader"),
+                options: {
+                  importLoaders: 1,
+                },
+              },
+              {
+                loader: require.resolve("postcss-loader"),
+                options: {
+                  implementation: require.resolve("postcss"),
+                },
+              },
+            ],
+          },
+        ],
+      },
+    },
     "storybook-addon-data-theme-switcher",
-    "storybook-css-modules",
+    {
+      name: "storybook-css-modules",
+      options: {
+        cssModulesLoaderOptions: {
+          importLoaders: 1,
+          modules: {
+            localIdentName: "[local]",
+          },
+        },
+      },
+    },
   ],
   framework: {
     name: "@storybook/react-webpack5",

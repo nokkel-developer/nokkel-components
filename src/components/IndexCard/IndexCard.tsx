@@ -1,6 +1,6 @@
 import React from "react";
 
-import IndexCardStyles from "./indexCard.module.css";
+import "./indexCard.css";
 
 const IndexCard = ({
   title,
@@ -13,12 +13,13 @@ const IndexCard = ({
 }) => {
   return (
     <a href={to} data-testid="index-card-wrapper">
-      <div className={IndexCardStyles.indexCardWrapper}>
-        <div className={IndexCardStyles.indexCardContainer}>
-          <div className={IndexCardStyles.indexCardImage}>?</div>
-          <div className={IndexCardStyles.indexCardTextWrapper}>
-            <h5 className={IndexCardStyles.indexCardTitle}>{title}</h5>
-            <p className={IndexCardStyles.indexCardSubTitle}>{subtitle}</p>
+      <div className="indexCardWrapper">
+        "
+        <div className="indexCardContainer">
+          <div className="indexCardImage">?</div>
+          <div className="indexCardTextWrapper">
+            <h5 className="indexCardTitle">{title}</h5>
+            <p className="indexCardSubTitle">{subtitle}</p>
           </div>
         </div>
       </div>

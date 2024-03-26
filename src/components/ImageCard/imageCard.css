@@ -3,7 +3,7 @@
 }
 
 [data-theme="quilter"] .imageCardWrapper {
-  @apply min-w-56 overflow-hidden rounded-custom border;
+  @apply min-w-56 overflow-hidden rounded-custom border bg-[#990000];
 }
 
 [data-theme="aviva"] .imageCardWrapper {
