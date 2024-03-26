@@ -14,7 +14,6 @@ const IndexCard = ({
   return (
     <a href={to} data-testid="index-card-wrapper">
       <div className="indexCardWrapper">
-        "
         <div className="indexCardContainer">
           <div className="indexCardImage">?</div>
           <div className="indexCardTextWrapper">

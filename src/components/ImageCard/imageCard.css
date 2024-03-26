@@ -1,21 +1,21 @@
 .imageCardWrapper {
-  @apply w-56 h-56 overflow-hidden rounded-custom border;
+  @apply min-w-56 h-56 overflow-hidden rounded-custom border;
 }
 
 [data-theme="quilter"] .imageCardWrapper {
-  @apply w-56 h-56 overflow-hidden rounded-custom border;
+  @apply min-w-56 h-56 overflow-hidden rounded-custom border;
 }
 
 [data-theme="aviva"] .imageCardWrapper {
-  @apply w-56 h-56 overflow-hidden rounded-custom border;
+  @apply min-w-56 h-56 overflow-hidden rounded-custom border;
 }
 
 .imageCardImageWrapper {
-  @apply h-32 w-56 bg-gray-20 mb-4 overflow-hidden;
+  @apply h-32 w-full bg-gray-20 mb-4 overflow-hidden;
 }
 
 .imageCardImage {
-  @apply h-32 w-56 object-cover;
+  @apply h-32 w-full object-cover;
 }
 
 .imageCardTextWrapper {
