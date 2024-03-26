@@ -9,8 +9,7 @@ const videoCard = ({
 }: {
   title: string;
   subtitle?: string;
-  imageSrc?: string;
-  videoSrc?: string;
+  videoSrc: string;
 }) => {
   return (
     <div data-testid="video-card-wrapper" className="videoCardWrapper">
