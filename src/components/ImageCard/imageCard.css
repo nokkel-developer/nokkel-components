@@ -11,7 +11,7 @@
 }
 
 .imageCardImageWrapper {
-  @apply bg-gray-20 mb-4 overflow-hidden;
+  @apply h-32 w-56 bg-gray-20 mb-4 overflow-hidden;
 }
 
 .imageCardImage {
