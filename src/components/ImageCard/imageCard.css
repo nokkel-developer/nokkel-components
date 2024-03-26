@@ -1,17 +1,17 @@
 .imageCardWrapper {
-  @apply min-w-56 h-56 overflow-hidden rounded-custom border;
+  @apply h-56 min-w-56 overflow-hidden rounded-custom border;
 }
 
 [data-theme="quilter"] .imageCardWrapper {
-  @apply min-w-56 h-56 overflow-hidden rounded-custom border;
+  @apply h-56 min-w-56 overflow-hidden rounded-custom border;
 }
 
 [data-theme="aviva"] .imageCardWrapper {
-  @apply min-w-56 h-56 overflow-hidden rounded-custom border;
+  @apply h-56 min-w-56 overflow-hidden rounded-custom border;
 }
 
 .imageCardImageWrapper {
-  @apply h-32 w-full bg-gray-20 mb-4 overflow-hidden;
+  @apply mb-4 h-32 w-full overflow-hidden bg-gray-20;
 }
 
 .imageCardImage {
@@ -23,7 +23,7 @@
 }
 
 .imageCardTitle {
-  @apply font-sans text-xl font-medium;
+  @apply text-ellipsis font-sans text-xl font-medium;
 }
 
 [data-theme="quilter"] .imageCardTitle {
@@ -31,5 +31,5 @@
 }
 
 .imageCardSubtitle {
-  @apply pb-4 font-sans font-light text-gray-100 pt-2;
+  @apply text-ellipsis pb-4 pt-2 font-sans font-light text-gray-100;
 }

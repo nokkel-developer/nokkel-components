@@ -7,9 +7,9 @@ const IndexCard = ({
   subtitle,
   to,
 }: {
-  title: string;
-  subtitle: string;
-  to: string;
+  title?: string;
+  subtitle?: string;
+  to?: string;
 }) => {
   return (
     <a href={to} data-testid="index-card-wrapper">

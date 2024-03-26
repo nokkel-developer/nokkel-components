@@ -14,7 +14,7 @@
 }
 
 .indexCardTitle {
-  @apply font-sans text-xl font-medium;
+  @apply text-ellipsis font-sans text-xl font-medium;
 }
 
 [data-theme="quilter"] .indexCardTitle {
@@ -22,5 +22,5 @@
 }
 
 .indexCardSubTitle {
-  @apply font-sans font-light text-gray-100;
+  @apply text-ellipsis font-sans font-light text-gray-100;
 }

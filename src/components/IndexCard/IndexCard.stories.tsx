@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import ImageCard from "./ImageCard";
+import IndexCard from "./IndexCard";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "ImageCard",
-  component: ImageCard,
+  title: "IndexCard",
+  component: IndexCard,
   parameters: {
     layout: "centered",
   },
@@ -17,7 +17,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof ImageCard>;
+} satisfies Meta<typeof IndexCard>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
