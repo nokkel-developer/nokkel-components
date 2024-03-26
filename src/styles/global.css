@@ -72,7 +72,8 @@
     --border-radius: 8px;
   }
 
-  #theme-provider[data-theme="aviva"] {
+  #theme-provider[data-theme="aviva"],
+  html[data-theme="aviva"] #theme-provider {
     /* Font */
     --font-family-sans: "Source Sans Pro";
     --h1-font-size: 4.375rem; /* 72px */
@@ -139,7 +140,8 @@
     --border-radius: 4px;
   }
 
-  #theme-provider[data-theme="quilter"] {
+  #theme-provider[data-theme="quilter"],
+  html[data-theme="quilter"] #theme-provider {
     /* Font */
     --font-family-serif: "Frank Ruhl Libre";
     --font-family-sans: "Open Sans";
@@ -275,7 +277,8 @@
 
   .link-underline {
     border-bottom-width: 0;
-    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#fff, #fff);
     background-size: 0 3px;
     background-position: 0 100%;
     background-repeat: no-repeat;

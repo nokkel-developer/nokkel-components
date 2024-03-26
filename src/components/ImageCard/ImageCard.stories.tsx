@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import React from "react";
 import ImageCard from "./ImageCard";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
@@ -12,6 +13,13 @@ const meta = {
   argTypes: {
     title: { control: "title" },
   },
+  decorators: [
+    (Story) => (
+      <div id="theme-provider">
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof ImageCard>;
 
 export default meta;

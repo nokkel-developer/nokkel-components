@@ -4751,7 +4751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^6.7.1":
+"css-loader@npm:^6.10.0, css-loader@npm:^6.7.1":
   version: 6.10.0
   resolution: "css-loader@npm:6.10.0"
   dependencies:
@@ -7701,6 +7701,7 @@ __metadata:
     "@storybook/test": "npm:^8.0.4"
     "@types/react": "npm:^18.2.67"
     autoprefixer: "npm:^10.4.19"
+    css-loader: "npm:^6.10.0"
     postcss: "npm:^8.4.38"
     postcss-loader: "npm:^8.1.1"
     react: "npm:^18.2.0"
