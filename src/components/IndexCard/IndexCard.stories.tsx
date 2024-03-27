@@ -10,6 +10,13 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
+  decorators: [
+    (Story) => (
+      <div className="w-[300px]">
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof IndexCard>;
 
 export default meta;

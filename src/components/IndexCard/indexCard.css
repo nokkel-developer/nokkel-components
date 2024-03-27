@@ -1,6 +1,7 @@
 .indexCardWrapper {
-  @apply flex flex-row rounded-custom border p-2;
+  @apply flex flex-row overflow-hidden rounded-custom border p-2;
 }
+
 .indexCardContainer {
   @apply flex flex-row;
 }
@@ -14,7 +15,7 @@
 }
 
 .indexCardTitle {
-  @apply text-ellipsis font-sans text-xl font-medium;
+  @apply truncate font-sans text-xl font-medium;
 }
 
 [data-theme="quilter"] .indexCardTitle {
@@ -22,5 +23,5 @@
 }
 
 .indexCardSubTitle {
-  @apply text-ellipsis font-sans font-light text-gray-100;
+  @apply w-full truncate font-sans font-light text-gray-100;
 }
