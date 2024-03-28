@@ -1,0 +1,19 @@
+.poweredByNokkelWrapper {
+  @apply flex h-6 flex-row gap-3 align-baseline;
+}
+
+.poweredByNokkelText {
+  @apply min-w-[70px] font-sans text-white;
+}
+
+.poweredByNokkelLogo {
+  @apply fill-white;
+}
+
+[data-theme="aviva"] .poweredByNokkelLogo {
+  @apply fill-black;
+}
+
+[data-theme="aviva"] .poweredByNokkelText {
+  @apply min-w-[70px] text-center font-sans text-black;
+}
